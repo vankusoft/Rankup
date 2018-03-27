@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="#F5F5F5">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/default_profile_pic"
+                android:id="@+id/profilePictureCardView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:id="@+id/postTitle"
+                android:text="Title" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="0.1dp"
+            android:background="@android:color/black" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/postImage" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="0.1dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:padding="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/postDescription"
+                android:textSize="18dp"
+                android:text="Description"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:padding="1dp"
+            android:background="#F5F5F5">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.115"
+                android:id="@+id/voteButton"
+                android:background="@drawable/vote_icon_color"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="18dp"
+                android:layout_weight="0.09"
+                android:id="@+id/countText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.115"
+                android:background="@drawable/comments_icon"
+                android:id="@+id/commentsIcon"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="18dp"
+                android:layout_weight="0.09"
+                android:id="@+id/countCommentsText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "75149287267",
+    "firebase_url": "https://dormnews-f1332.firebaseio.com",
+    "project_id": "dormnews-f1332",
+    "storage_bucket": "dormnews-f1332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75149287267:android:61488d75c23f23f3",
+        "android_client_info": {
+          "package_name": "com.jgntic.ivan.dormnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75149287267-m8rth373fduat440i980qduid0ca9lmj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jgntic.ivan.dormnews",
+            "certificate_hash": "e68fb2e63dcace26fc9b6ad7868b7d6445c18e5d"
+          }
+        },
+        {
+          "client_id": "75149287267-60d1v47apefccfl8u63p5j07937n9bsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwuAfFRJbGb9XG6Zn6aL6t9zwQs9R9wvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75149287267-60d1v47apefccfl8u63p5j07937n9bsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

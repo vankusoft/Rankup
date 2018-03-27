@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.jgntic.ivan.dormnews.HotOrNot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="#EEEEEE"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="RANKUP"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#EC407A"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/hotImageView"
+            android:background="@drawable/default_profile_pic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/hotTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.17"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/hotHotBtn"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/hart_icon"
+            android:onClick="hotBtnOnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/hotNotBtn"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/not_icon"
+            android:onClick="notBtnOnClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="0.1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Top Girls"
+            android:textSize="18dp"
+            android:onClick="topGirlsButton"
+            android:theme="@style/AppTheme.Button"
+            android:textColor="#E0E0E0"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Top Boys"
+            android:textSize="18dp"
+            android:onClick="topBoysButton"
+            android:theme="@style/AppTheme.Button"
+            android:textColor="#E0E0E0"/>
+    </LinearLayout>
+</LinearLayout>

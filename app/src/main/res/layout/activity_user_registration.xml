@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1"
+    android:background="#0D47A1"
+    tools:context="com.jgntic.ivan.dormnews.UserRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RANKUP"
+            android:textSize="55dp"
+            android:textStyle="bold"
+            android:textColor="#EC407A"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.75"
+        android:gravity="center">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/regName"
+        android:layout_marginTop="20dp"
+        android:hint="Type first and last name"
+        android:textColor="#E0E0E0"
+        android:textColorHint="#E0E0E0"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/regEmail"
+        android:layout_marginTop="20dp"
+        android:hint="Type email"
+        android:textColor="#E0E0E0"
+        android:textColorHint="#E0E0E0"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/regGender"
+        android:layout_marginTop="20dp"
+        android:hint="Gender: Male/Female"
+        android:textColor="#E0E0E0"
+        android:textColorHint="#E0E0E0"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/regPassword"
+        android:layout_marginTop="20dp"
+        android:hint="Type your password"
+        android:inputType="textPassword"
+        android:textColor="#E0E0E0"
+        android:textColorHint="#E0E0E0"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/regPasswordConfirm"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:hint="Confirm password"
+        android:textColor="#E0E0E0"
+        android:textColorHint="#E0E0E0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:id="@+id/regButton"
+            android:onClick="registerOnClick"
+            android:theme="@style/AppTheme.Button"
+            android:textColor="#E0E0E0"/>
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text="OR"
+                android:textColor="#E0E0E0" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:id="@+id/regLoginButton"
+            android:onClick="regLoginOnClick"
+            android:theme="@style/AppTheme.Button"
+            android:textColor="#E0E0E0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

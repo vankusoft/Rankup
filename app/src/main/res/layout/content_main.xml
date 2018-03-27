@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jgntic.ivan.dormnews.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/logout"
+                android:onClick="mainLogoutOnClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="RANKUP"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#EC407A"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333"
+            android:gravity="right">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/add_picture"
+                android:onClick="mainAddPictureOnClick"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.99">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="0.01"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#EEEEEE">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:background="@drawable/user_icon"
+                android:onClick="profileOnClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/top_icon"
+                android:onClick="topOnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.333"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/hot_or_not_icon"
+                android:onClick="hotOrNotOnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
