@@ -11,3 +11,6 @@ I improve performance of the app multiple times by using Piccasso libraries for 
 There are multiple Rank-lists based on users post likes and user likes. Each user have a profile activity with their information, 
 they are allowed to write post comments and see who have liked posts as well. The app provides many opportunities.
 
+Here is the link of Rankup in Google Play! You can test it for free!
+https://play.google.com/store/apps/details?id=com.jgntic.ivan.dormnews&hl=bg
+
