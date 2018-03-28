@@ -350,8 +350,10 @@ public class MainHandler extends AppCompatActivity{
                 }
             }
 
-            array_adapter =new CustomListLayoutPostComments(MainHandler.this,
-                    list_name,list_comment,list_profileImage,getApplicationContext());
+            array_adapter =new CustomListLayout(MainHandler.this,
+                    list_name,list_comment,list_profileImage,getApplicationContext(),
+                    R.layout.custom_list_layout_post_comments,R.id.customPostCommentsName,R.id.customPostCommentsComment,
+                    R.id.customPostCommentsImage);
 
             list_view.setAdapter(array_adapter);
 

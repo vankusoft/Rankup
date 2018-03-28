@@ -28,15 +28,34 @@ public class CustomListLayout extends ArrayAdapter<String>{
 
     List<String> profilePictureList,votes;
     Context appContext,context;
+    int layout,text,vote,image;
 
+    TextView votesTV;
+    String voteString;
+
+    public CustomListLayout(@NonNull Context context, List<String> items,List<String> profilePictureList,Context appContext,
+                            int layout,int name, int image) {
+        super(context,layout,items);
+        this.layout=layout;
+        this.text=name;
+        this.image=image;
+        this.profilePictureList=profilePictureList;
+        this.context=context;
+        this.appContext=appContext;
+    }
 
     public CustomListLayout(@NonNull Context context, List<String> items,List<String> votes,
-                            List<String> profilePictureList, Context applicationContext) {
-        super(context,R.layout.custom_list_layout ,items);
+                            List<String> profilePictureList, Context applicationContext,
+                            int layout, int text,int vote,int image) {
+        super(context,layout,items);
         this.context=context;
         this.votes=votes;
         this.profilePictureList=profilePictureList;
         this.appContext=applicationContext;
+        this.layout=layout;
+        this.text=text;
+        this.vote=vote;
+        this.image=image;
     }
 
     @NonNull
@@ -46,14 +65,19 @@ public class CustomListLayout extends ArrayAdapter<String>{
         if(convertView==null)
         {
             LayoutInflater vi = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = vi.inflate(R.layout.custom_list_layout, parent, false);
+            convertView = vi.inflate(layout, parent, false);
 
-            TextView nameTV=(TextView)convertView.findViewById(R.id.topListText);
-            TextView votesTV=(TextView)convertView.findViewById(R.id.topListVote);
-            ImageView imageView=(ImageView)convertView.findViewById(R.id.topListImage);
+            TextView nameTV=(TextView)convertView.findViewById(text);
+
+            if(votes!=null)
+            {
+                votesTV=(TextView)convertView.findViewById(vote);
+                voteString=votes.get(position);
+            }
+
+            ImageView imageView=(ImageView)convertView.findViewById(image);
 
             String name=getItem(position);
-            String vote=votes.get(position);
 
             if(!profilePictureList.get(position).contentEquals("null"))
             {
@@ -68,7 +92,12 @@ public class CustomListLayout extends ArrayAdapter<String>{
             }
 
             nameTV.setText(name);
-            votesTV.setText(vote);
+
+            if(votes!=null)
+            {
+                votesTV.setText(voteString);
+            }
+
         }
         return convertView;
     }

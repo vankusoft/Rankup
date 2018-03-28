@@ -62,7 +62,8 @@ public class TopHandler extends RankListsHandler{
 
                 sort();
 
-                arrayAdapter=new CustomListLayoutHotOrNot(context, listName,listVote, profilePicturesList,getApplicationContext());
+                arrayAdapter=new CustomListLayout(context, listName,listVote, profilePicturesList,getApplicationContext(),
+                        R.layout.custom_list_layout_hot_or_not,R.id.hotListText,R.id.hotListVote,R.id.hotListImage);
                 listView.setAdapter(arrayAdapter);
 
                 arrayAdapter.notifyDataSetChanged();

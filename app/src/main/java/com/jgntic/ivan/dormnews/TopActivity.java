@@ -60,7 +60,8 @@ public class TopActivity extends RankListsHandler implements AdapterView.OnItemC
                 sort();
 
                 arrayAdapter=new CustomListLayout(TopActivity.this,
-                        listName, listVote, profilePicturesList,getApplicationContext());
+                        listName, listVote, profilePicturesList,getApplicationContext(),
+                        R.layout.custom_list_layout, R.id.topListText,R.id.topListVote,R.id.topListImage);
 
                 listView.setAdapter(arrayAdapter);
 

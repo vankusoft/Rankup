@@ -147,7 +147,8 @@ public class PostLikes extends AppCompatActivity implements AdapterView.OnItemCl
                         }
                     }
 
-                    arrayAdapter=new CustomListLayoutPostLikes(PostLikes.this,listName,profilePicList,getApplicationContext());
+                    arrayAdapter=new CustomListLayout(PostLikes.this,listName,profilePicList,getApplicationContext(),
+                            R.layout.custom_list_layout_post_likes,R.id.likesListName,R.id.likesListImageView);
 
                     listView.setAdapter(arrayAdapter);
                     arrayAdapter.notifyDataSetChanged();
