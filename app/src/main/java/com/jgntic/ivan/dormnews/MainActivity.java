@@ -46,9 +46,9 @@ public class MainActivity extends MainHandler{
             } else {
                 savedScrollPosition= extras.getInt("pos");
             }
-        } else {
-            savedScrollPosition=(int) savedInstanceState.getSerializable("pos");
-        }
+        } //else {
+           // savedScrollPosition=(int) savedInstanceState.getSerializable("pos");
+        //}
     }
 
     @Override

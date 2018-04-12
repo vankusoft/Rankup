@@ -93,8 +93,8 @@
                 android:textColor="#000000" />
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/post_icon"/>
@@ -123,8 +123,8 @@
                 android:textColor="#000000"/>
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/vote_icon_color"/>
@@ -139,7 +139,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="User likes:"
+                    android:text="Likes:"
                     android:textSize="20dp"
                     android:textColor="#000000"/>
 
@@ -153,10 +153,11 @@
                     android:textColor="#000000"/>
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:background="@drawable/hart_icon"/>
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/hart_icon"
+                    android:onClick="viewLikesClick"/>
 
             </LinearLayout>
 

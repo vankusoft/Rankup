@@ -17,8 +17,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -64,10 +64,11 @@
         <activity
             android:name=".SomeUser"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainHandler"></activity>
-
-        <activity android:name=".PostLikes"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainHandler" />
+        <activity
+            android:name=".PostLikes"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ShowLikes"></activity>
     </application>
 
 </manifest>

@@ -100,10 +100,10 @@ public class UserProfile extends AppCompatActivity {
                     if (dataSnapshot.child(current_user).child("total_votes").exists()) {
                         postVotes.setText(dataSnapshot.child(current_user).child("total_votes").getValue().toString());
                     }
-                    if (dataSnapshot.child(current_user).child("UsersVoted").exists()) {
-                        long likes = dataSnapshot.child(current_user).child("UsersVoted").getChildrenCount();
-                        int likeInt = (int) likes;
-                        userLikes.setText(Integer.toString(likeInt));
+                    if (dataSnapshot.child(current_user).child("UserLikes").exists()) {
+
+                        String likes = dataSnapshot.child(current_user).child("UserLikes").getValue().toString();
+                        userLikes.setText(likes);
                     }
                 }
                 databaseReference.removeEventListener(this);
@@ -186,5 +186,12 @@ public class UserProfile extends AppCompatActivity {
             }
         });
     }
+
+    public void viewLikesClick(View view)
+    {
+        Intent viewLikesIntent=new Intent(UserProfile.this,ShowLikes.class);
+        startActivity(viewLikesIntent);
+    }
+
 }
 
